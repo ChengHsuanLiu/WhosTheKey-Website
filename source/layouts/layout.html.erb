@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Who's the key?" %></title>
+
+    <%= stylesheet_link_tag "normalize","main" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <nav class="nav-ontop">
+        <div class="nav-wrapper">
+          <a href="#link1" class="brand-logo"><%= image_tag ('title-logo.png') %></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <ul class="right hide-on-med-and-down nav-ul">
+            <li><a href="#link1">活動簡介</a></li>
+            <li><a href="#link2">活動流程</a></li>
+            <li><a href="#link3">我要報名</a></li>
+          </ul>
+          <ul class="side-nav nav-ul" id="mobile-demo">
+            <li><a href="sass.html">活動簡介</a></li>
+            <li><a href="components.html">活動流程</a></li>
+            <li><a href="javascript.html">我要報名</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <%= yield %>
+    <script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+      })
+    </script>
+  </body>
+</html>

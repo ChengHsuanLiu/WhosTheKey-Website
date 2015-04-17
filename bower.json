@@ -1,0 +1,16 @@
+{
+  "name": "Colorgy-WhosTheKey",
+  "version": "0.0.0",
+  "authors": [
+    "ChengHsuanLiu <chenghsuango@gmail.com>"
+  ],
+  "description": "Colorgy-WhosTheKey",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,10 +1,144 @@
----
-title: Welcome to Middleman
----
+<div class="container-fluid">
+	<div class="row">
+        <div class="col-md-12 home">
+            <div class="home-bg-cover"></div>
+            <div class="home-skew-bg"></div>
+            <div class="home-inner">
+                <div class="home-inner-title">
+                    <div class="logo">
+                        <%= image_tag ('title-logo.png') %>
+                    </div>
+                    <div class="text">
+                        <%= image_tag ('title-text.png') %>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-12 about">
+			<div class="about-inner">
+                <div class="field-title" id="link1">
+                    <%= image_tag ('about.png') %>
+                </div>
+				<blockquote>
+					透過舉辦活動經驗分享、各校交流聯誼性質的「小派對」活動<br>
+					聚集全台灣北區(雙北、桃、竹、 苗)大專院校的系學會長與幹部。
+				</blockquote>
+				<ol>
+					<li>各校系自由交流時間</li>
+					<li>贊助商推廣</li>
+					<li>破冰遊戲</li>
+					<li>學⽣生活動經驗分享 - 台⼤藝術季、政⼤金弦獎、與⾺雲有約座談會</li>
+					<li>暖場活動與休息時間</li>
+					<li>Colorgy 下學期各校合作計畫</li>
+					<li>Q & A、講者交流時間</li>
+				</ol>
+			</div>
+		</div>
+		<div class="col-md-12 process">
+			<div class="process-inner">
+                <div class="field-title" id="link2">
+                    <%= image_tag ('process.png') %>
+                </div>
+				<ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header">1. 簽到、各系會交流時間</div>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li>各系系會陸續抵達會場、簽到</li>
+                              <li>學⽣生群⾃自由交流</li>
+                              <li>播放贊助廠商影⽚片</li>
+                              <li>現場備茶點、飲料,參加者可⾃行取用</li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">2. 活動開場、贊助推廣</div>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li>主持⼈人開場,介紹本次活動之贊助商訊息。</li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">3. 破冰遊戲</div>
+                      <div class="collapsible-body">
+                          <ul>
+                            <li>進⼊入分享前的暖場活動</li>
+                            <li>「Speed Dating」- 促進參加者間的交流認識</li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">4. 活動經驗分享</div>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li>五位講者,每位 8 mins</li>
+                              <li>預計邀請講者:台⼤大藝術季/政⼤大⾦金弦獎/淡江知識⺩王/清交梅⽵竹賽/台⼤大學⽣生會</li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">5. Colorgy Books 下學期各校合作計畫</div>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li>介紹 Colorgy Books 平台理念、與下學期的各校合作計畫</li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header">6. Q & A、講者交流時間</div>
+                      <div class="collapsible-body">
+                          <ul>
+                              <li>活動尾聲,可⾃自由交流/聊天</li>
+                              <li>活動獎品開獎時間</li>
+                          </ul>
+                      </div>
+                    </li>
+                </ul>
+			</div>
+		</div>
+        <div class="col-md-12 apply">
+            <div class="apply-inner">
+                <div class="field-title" id="link3">
+                <%= image_tag ('apply.png') %>
+                </div>
+                <h5>現在就報名！</h5>
+                <p style="margin-top:15px;">
+                看口也小進由音地士自王創度音病施影後更去後一對用技在理一以外快，在成買理參社，以計企他管但道少識別眼花再細有與空標接？的這戰力或劇寫次……公來國一長學老斷可你種須一或用種了麼同政雖房港斷電現如除中黃神的於日笑畫遠規意說景平否子也出。
+                </p>
+                <a href="#modal1" class="waves-effect waves-light btn-large modal-trigger" style="margin-top: 50px;">我要報名！</a>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <!-- Change the width and height values to suit you best -->
+                        <div class="typeform-widget" data-url="https://lucas51.typeform.com/to/lKjMwk" data-text="WhosTheKey" style="width:100%;height:500px;"></div>
+                        <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+                            <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_lKjMwk&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=繁體字" style="color: #999" target="_blank">Typeform</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<script>
+    $( document ).ready(function(){
+        $('#modal1').leanModal();
+        $('.modal-trigger').click(function(){
+            $('#modal1').openModal();
+        })
+        $('.nav-ul a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - 50
+            }, 400, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+    })
+</script>
