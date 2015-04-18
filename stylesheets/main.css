@@ -18153,3 +18153,14 @@ nav ul a {
 .modal-content {
   min-height: 100%;
   padding: 0 !important; }
+
+/* line 204, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+.button-collapse {
+  margin-left: 20px;
+  margin-top: 15px; }
+
+/* line 208, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+.back-to-home {
+  position: fixed;
+  top: 15px;
+  right: 15px; }
