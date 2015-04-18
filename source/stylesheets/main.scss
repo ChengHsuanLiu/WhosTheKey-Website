@@ -30,6 +30,9 @@ nav ul a{
 	.right{
 		padding-right: 40px;
 	}
+	.form-mobile-user-notice{
+		display: none;
+	}
 }
 @media screen and (max-width: 993px){
 	.brand-logo{
@@ -209,4 +212,14 @@ nav ul a{
 	position: fixed;
 	top: 15px;
 	right: 15px;
+}
+.form-mobile-user-notice{
+  position: absolute;
+  z-index: 9999;
+  text-align: center;
+  width: 100%;
+  background-color: #3C92A4;
+  color: #fff;
+  font-size: 20px;
+  top: 56px;
 }
