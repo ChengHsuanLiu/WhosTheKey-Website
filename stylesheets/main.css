@@ -18052,7 +18052,7 @@ nav ul a {
       width: 100%;
       max-width: 600px;
       min-width: 320px;
-      margin: 0 auto;
+      margin: 20px auto;
       text-align: center; }
       /* line 107, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
       .home .home-inner .home-inner-title .logo {
@@ -18076,7 +18076,7 @@ nav ul a {
   .about .about-inner {
     width: 100%;
     max-width: 600px;
-    min-width: 320px;
+    min-width: 260px;
     margin: 0 auto;
     padding: 20px 30px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -18098,7 +18098,7 @@ nav ul a {
   .process .process-inner {
     width: 100%;
     max-width: 1000px;
-    min-width: 320px;
+    min-width: 260px;
     margin: 0 auto; }
 
 /* line 156, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
@@ -18117,7 +18117,7 @@ nav ul a {
     width: 100%;
     margin: 0 auto;
     max-width: 600px;
-    min-width: 320px; }
+    min-width: 260px; }
     /* line 171, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
     .apply .apply-inner h5 {
       color: #fff; }
