@@ -36,7 +36,32 @@
     </div>
     <style>
     .back-to-home{ display: none; }
+    #map_canvas { width: 100%; min-height: 500px; height: 250px;}
 </style>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=&sensor=true"></script>
+<script type="text/javascript">
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(25.004274, 121.538361)
+    var mapOptions = {
+      center: myLatlng,
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      scrollwheel: false
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        mapOptions);
+    var contentString = '<div>' + 'Changee Playground' + '</div>';
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Uluru (Ayers Rock)'
+    });
+    infowindow.open(map,marker);
+  }
+</script>
 <div class="container-fluid">
 	<div class="row">
         <div class="col-md-12 home">
@@ -63,9 +88,9 @@
         </div>
     		<div class="col-md-12 about">
     			<div class="about-inner">
-                    <div class="field-title" id="link1">
-                        <img src="/images/about.png" />
-                    </div>
+            <div class="field-title" id="link1">
+                <img src="/images/about.png" />
+            </div>
     				<blockquote>
     					在這裡<br>
               你能遇到各校各地、與你相同的系會菁英<br>
@@ -76,12 +101,74 @@
     				</blockquote>
     			</div>
     		</div>
+        <div class="col-md-12">
+          <div class="row info">
+            <div class="col-md-6">
+              ＃新任幹部建立各校人脈
+            </div>
+            <div class="col-md-6">
+              ＃現任幹部揪團齊來拉贊
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 colorgy">
+          <div class="colorgy-inner">
+            <div class="field-title" id="link1">
+                <img src="/images/organizer.png" />
+            </div>
+            <div class="colorgy-logo">
+                <img src="/images/colorgy-logo.png" />
+            </div>
+            <blockquote>
+              跟你們一樣，我們都是來自於台灣校園的大學生，<br>
+              Colorgy 的產生，是為了讓校園生活更加方便，希望召集大家一起建立ㄧ個充滿創造力的校園。
+            </blockquote>
+            <p>
+              Colorgy是個開源的雲端平台，我們蒐集資源並開源讓全台灣所有大學生使用，<br> 跟我們一起協力合作做更便利、更好、更貼近生活的服務。
+            </p>
+            <blockquote>
+              Colorgy Books 原文書團購服務是我們第一項要推出的線上系統，<br>
+              這系統將修正傳統購書流程的瑕疵，並且更公開透明、完整便利，<br>
+              讓大家在選購書籍的過程中，享受最貼心、安心、用心的服務。<br>
+            </blockquote>
+            <p>
+              這是我們開啓的第一個校園改變，你也有想改變什麼的想法嗎？<br>
+              我們邀請同樣是大學生的你們，一起加入這個改變，我們將陸續推出各項能增加校園便利的線上服務，解決大家校園中可能的不便，一起 Color your College！<br>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 location">
+          <div class="location-inner">
+
+            <div class="row">
+              <div class="col-md-7 col-md-push-5">
+                <div class="location-info">
+                <div class="field-title" id="link1">
+                    <img src="/images/location-title.png" />
+                </div>
+                  <h3>Changee Playground</h3>
+                  <hr>
+                  <ul>
+                    <li>地址： 116台北市文山區羅斯福路五段176巷2號</li>
+                    <li>時間： 2015 / 5 / 11 晚上6:00 準時入場</li>
+                    <h4>交通資訊</h4>
+                    <li>搭捷運至捷運萬隆站，沿著羅斯福路步行 5 分鐘</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-md-pull-7">
+                <div id="map_canvas"></div>
+              </div>
+            </div>
+          </div>
+        </div>
     		<div class="col-md-12 process">
     			<div class="process-inner">
                     <div class="field-title" id="link2">
                         <img src="/images/process.png" />
                     </div>
-    				<ul class="collapsible" data-collapsible="accordion">
+                    <!--
+    				        <ul class="collapsible" data-collapsible="accordion">
                         <li>
                           <div class="collapsible-header">1. 簽到、各系會交流時間</div>
                           <div class="collapsible-body">
@@ -120,7 +207,7 @@
                           </div>
                         </li>
                         <li>
-                          <div class="collapsible-header">5. Colorgy Books 下學期各校合作計畫</div>
+                          <div class="collapsible-header">5. Colorgy 下學期各校合作計畫</div>
                           <div class="collapsible-body">
                               <ul>
                                   <li>介紹 Colorgy Books 平台理念、與下學期的各校合作計畫</li>
@@ -136,7 +223,78 @@
                               </ul>
                           </div>
                         </li>
-                    </ul>
+                    </ul>-->
+                    <table class="hoverable">
+                      <thead>
+                        <tr>
+                          <th>時間</th>
+                          <th>活動名稱</th>
+                          <th>活動內容</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>18 : 00 ~ 18 : 30</td>
+                          <td>簽到、各系會交流時間</td>
+                          <td>
+                              <ul>
+                                  <li>各系系會陸續抵達會場、簽到</li>
+                                  <li>學⽣群⾃由交流</li>
+                                  <li>播放贊助廠商影⽚</li>
+                                  <li>現場備茶點、飲料，參加者可⾃行取用</li>
+                              </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>18 : 30 ~ 18 : 40</td>
+                          <td>活動開場、贊助推廣</td>
+                          <td>
+                              <ul>
+                                  <li>主持⼈開場，介紹本次活動之贊助商訊息。</li>
+                              </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>18 : 40 ~ 19 : 00</td>
+                          <td>破冰遊戲</td>
+                          <td>
+                              <ul>
+                                <li>進⼊分享前的暖場活動</li>
+                                <li>「Speed Dating」- 促進參加者間的交流認識</li>
+                              </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19 : 00 ~ 20 : 00</td>
+                          <td>活動經驗分享</td>
+                          <td>
+                              <ul>
+                                  <li>五位講者，每位 8 mins</li>
+                                  <li>預計邀請講者:台⼤藝術季/政⼤金弦獎/淡江知識王/清交梅竹賽/台⼤學生會</li>
+                              </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>20 : 20 ~ 20 : 40</td>
+                          <td>Colorgy 下學期各校合作計畫</td>
+                          <td>
+                              <ul>
+                                  <li>介紹 Colorgy Books 平台理念、與下學期的各校合作計畫</li>
+                              </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>20 : 40 ~ 21 : 00</td>
+                          <td>Q & A、講者交流時間</td>
+                          <td>
+                              <ul>
+                                  <li>活動尾聲,可⾃自由交流/聊天</li>
+                                  <li>活動獎品開獎時間</li>
+                              </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
     			</div>
     		</div>
         <div class="col-md-12 apply">
@@ -146,7 +304,8 @@
                 </div>
                 <h5>現在就報名！</h5>
                 <p style="margin-top:15px;">
-                看口也小進由音地士自王創度音病施影後更去後一對用技在理一以外快，在成買理參社，以計企他管但道少識別眼花再細有與空標接？的這戰力或劇寫次……公來國一長學老斷可你種須一或用種了麼同政雖房港斷電現如除中黃神的於日笑畫遠規意說景平否子也出。
+                吃吃喝喝／認識交流／聯誼玩樂／贊助抽獎<br>
+                參加活動全面免費，要報名要快！。
                 </p>
                 <a href="./apply.html" class="waves-effect waves-light btn-large mobile" style="margin-top: 50px;">我要報名！</a>
             </div>
@@ -172,6 +331,11 @@
             });
         });
     })
+</script>
+<script>
+$(window).load(function(){
+    initialize()
+});
 </script>
 
     <script>
