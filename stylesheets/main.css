@@ -18203,67 +18203,66 @@ nav ul a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   padding: 60px 20px; }
-  /* line 262, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  /* line 261, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
   .apply .apply-inner {
     text-align: center;
     width: 100%;
     margin: 0 auto;
     max-width: 600px;
     min-width: 260px; }
-    /* line 268, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+    /* line 267, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
     .apply .apply-inner h5 {
       color: #fff; }
-    /* line 271, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+    /* line 270, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
     .apply .apply-inner p {
       color: #fff; }
 
-/* line 276, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 275, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .collapsible-header {
   padding: 5px 1rem;
   font-size: 18px;
   height: 3.5rem; }
 
-/* line 281, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 280, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .collapsible-body {
   background-color: #fff;
   padding: 40px 50px; }
-  /* line 284, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  /* line 283, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
   .collapsible-body li {
     list-style-type: square;
     font-size: 18px;
     line-height: 34px; }
 
-/* line 290, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 289, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .field-title {
   width: 200px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px; }
 
-/* line 296, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 295, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .modal {
   width: 95% !important;
   min-width: 300px; }
 
-/* line 300, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 299, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .modal-content {
   min-height: 100%;
   padding: 0 !important; }
 
-/* line 304, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 303, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .button-collapse {
   margin-left: 20px;
   margin-top: 15px; }
 
-/* line 308, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 307, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .back-to-home {
   position: fixed;
   top: 15px;
   right: 15px; }
 
-/* line 313, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 312, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .form-mobile-user-notice {
   position: absolute;
   z-index: 9999;
