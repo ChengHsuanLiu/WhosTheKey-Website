@@ -18185,17 +18185,18 @@ nav ul a {
     margin: 0 auto; }
   /* line 241, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
   .process table {
+    line-height: 22px;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-    /* line 245, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+    /* line 246, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
     .process table th, .process table td {
       padding-left: 15px; }
-    /* line 248, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+    /* line 249, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
     .process table li {
       list-style-type: square; }
 
-/* line 253, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 254, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .apply {
   min-height: 650px;
   padding: 60px 20px;
@@ -18204,65 +18205,65 @@ nav ul a {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 20px; }
-  /* line 261, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  /* line 262, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
   .apply .apply-inner {
     text-align: center;
     width: 100%;
     margin: 0 auto;
     max-width: 600px;
     min-width: 260px; }
-    /* line 267, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+    /* line 268, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
     .apply .apply-inner h5 {
       color: #fff; }
-    /* line 270, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+    /* line 271, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
     .apply .apply-inner p {
       color: #fff; }
 
-/* line 275, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 276, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .collapsible-header {
   padding: 5px 1rem;
   font-size: 18px;
   height: 3.5rem; }
 
-/* line 280, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 281, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .collapsible-body {
   background-color: #fff;
   padding: 40px 50px; }
-  /* line 283, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  /* line 284, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
   .collapsible-body li {
     list-style-type: square;
     font-size: 18px;
     line-height: 34px; }
 
-/* line 289, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 290, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .field-title {
   width: 200px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px; }
 
-/* line 295, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 296, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .modal {
   width: 95% !important;
   min-width: 300px; }
 
-/* line 299, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 300, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .modal-content {
   min-height: 100%;
   padding: 0 !important; }
 
-/* line 303, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 304, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .button-collapse {
   margin-left: 20px;
   margin-top: 15px; }
 
-/* line 307, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 308, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .back-to-home {
   position: fixed;
   top: 15px;
   right: 15px; }
 
-/* line 312, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+/* line 313, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
 .form-mobile-user-notice {
   position: absolute;
   z-index: 9999;
