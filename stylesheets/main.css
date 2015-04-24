@@ -18273,3 +18273,68 @@ nav ul a {
   color: #fff;
   font-size: 20px;
   top: 56px; }
+
+/* line 324, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+.hover-box {
+  position: relative;
+  overflow: hidden; }
+  /* line 328, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  .hover-box .hover-box-inner {
+    position: absolute;
+    background-color: rgba(233, 66, 109, 0.85);
+    width: 100%;
+    top: -100%;
+    font-size: 17px;
+    height: auto;
+    min-height: 100%;
+    color: #F9F9F9;
+    padding: 10px 10px;
+    transition: top 0.3s; }
+  /* line 340, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  .hover-box:hover .hover-box-inner {
+    top: 0% !important; }
+
+/* Isotope */
+/* clear fix */
+/* line 347, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- .element-item ---- */
+/* line 353, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+.grid-sizer {
+  width: 23%; }
+
+/* line 356, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+.element-item {
+  position: relative;
+  float: left;
+  width: 23%;
+  height: auto;
+  margin: 1%;
+  padding: 0;
+  background: #fff;
+  color: #262524; }
+
+@media screen and (min-width: 1425px) {
+  /* line 367, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  .element-item {
+    width: 23%; } }
+@media (max-width: 1425px) and (min-width: 800px) {
+  /* line 368, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  .element-item {
+    width: 31.333333%; } }
+@media (max-width: 800px) and (min-width: 320px) {
+  /* line 369, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  .element-item {
+    width: 48%; } }
+@media screen and (max-width: 508px) {
+  /* line 370, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+  .element-item {
+    width: 98%; } }
+/* line 371, /Users/Lucas/Desktop/Colorgy-WhosTheKey/source/stylesheets/main.scss */
+.element-item > * {
+  margin: 0;
+  padding: 0; }

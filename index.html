@@ -302,6 +302,36 @@
               我們邀請同樣是大學生的你們，一起加入這個改變，我們將陸續推出各項能增加校園便利的線上服務，解決大家校園中可能的不便，一起 Color your College！<br>
             </p>
           </div>
+          <div class="sponsor-inner isotope">
+              <div class="grid-sizer"></div>
+              <div class="element-item">
+                <img src="/images/taiwan.jpg" />
+              </div>
+              <div class="element-item">
+                <img src="/images/kirin.jpg" />
+              </div>
+              <div class="element-item">
+                <img src="/images/uber.jpg" />
+              </div>
+              <div class="element-item">
+                <img src="/images/costco.jpg" />
+              </div>
+              <div class="element-item">
+                <div class="hover-box" style="box-shadow: 3px 3px 15px rgba(233, 66, 109,.85);">
+                  <a target="_blank" href="https://www.facebook.com/minimelts.tw?fref=ts">
+                    <img src="/images/miniicecream.jpg" />
+                    <div class="hover-box-inner">
+                      Mini Melts 粒粒冰淇淋是源自美國並在全球快速擴展國際冰淇淋品牌，我們在超過20個國家及地區展開服務並提供最優質的產品給我們的消費者，現在我們非常開心能夠為台灣消費者帶來嶄新的冰淇淋體驗！我們相信你們一定會喜歡 Mini Melts粒粒冰淇淋！
+                      <hr>
+                      #點擊進入粉專！
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="element-item">
+                <img src="/images/mrcomputer.jpg" />
+              </div>
+          </div>
         </div>
         <div class="col-md-12 apply">
             <div class="apply-inner">
@@ -343,6 +373,31 @@
 $(window).load(function(){
     initialize()
 });
+</script>
+<script src="/javascripts/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="/javascripts/isotope.min.js" type="text/javascript"></script>
+<script>
+$( function() {
+  // init Isotope
+  var $container = $('.isotope').imagesLoaded(function(){
+    $container.isotope({
+      itemSelector: '.element-item',
+      columnWidth: '.grid-sizer',
+      getSortData: {
+        number: '.number parseInt'
+    }
+    });
+  });
+  $container.on( 'click', '.close', function() {
+      // remove clicked element
+      var $target = $(this).parent('.element-item');
+      $container.isotope( 'remove', $target )
+      // layout remaining item elements
+        .isotope('layout');
+    });
+
+});
+
 </script>
 
     <script>
