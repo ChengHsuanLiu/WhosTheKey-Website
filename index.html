@@ -43,8 +43,10 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=&sensor=true"></script>
 <script type="text/javascript">
   function initialize() {
+    var isDraggable = $(document).width() > 480 ? true : false;
     var myLatlng = new google.maps.LatLng(25.004274, 121.538361)
     var mapOptions = {
+      draggable: isDraggable,
       center: myLatlng,
       zoom: 16,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
