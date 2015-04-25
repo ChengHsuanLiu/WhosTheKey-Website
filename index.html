@@ -320,7 +320,7 @@
                   <img src="/images/uber.jpg" />
                   <div class="element-item-infobox">
                     <h5>Uber</h5>
-                    <p><a href="#uber">活動介紹</a></p>
+                    <p><a href="#uber" class="modal-trigger">活動介紹</a></p>
                   </div>
                 </div>
               </div>
@@ -364,6 +364,19 @@
         </div>
 	</div>
 </div>
+<!-- Modal Structure -->
+<div id="uber" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Uber X T-FEST </h4>
+    <h5>#點擊圖片可以放大查看</h5>
+    <img src="/images/uber-ad1.jpg" />
+    <a href="http://key.clg.io/images/uber-img1.jpg"><img src="/images/uber-img1.jpg" /></a>
+    <a href="http://key.clg.io/images/uber-img2.jpg"><img src="/images/uber-img2.jpg" /></a>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">關閉</a>
+  </div>
+</div>
 <script>
     $( document ).ready(function(){
         $('#modal1').leanModal();
@@ -387,6 +400,10 @@
 <script>
 $(window).load(function(){
     initialize()
+});
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
 });
 </script>
 <script src="/javascripts/imagesloaded.pkgd.min.js" type="text/javascript"></script>
