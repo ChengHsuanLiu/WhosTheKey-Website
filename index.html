@@ -285,22 +285,27 @@
             <div class="colorgy-logo">
                 <img src="/images/colorgy-logo.png" />
             </div>
-            <blockquote>
-              跟你們一樣，我們都是來自於台灣校園的大學生，<br>
-              Colorgy 的產生，是為了讓校園生活更加方便，希望召集大家一起建立ㄧ個充滿創造力的雲端校園平台。
-            </blockquote>
-            <p>
-              Colorgy是個開源的雲端平台，我們蒐集資源並開源讓全台灣所有大學生使用，<br> 跟我們一起協力合作做更便利、更好、更貼近生活的服務。
-            </p>
-            <blockquote>
-              Colorgy Books 原文書團購服務是我們第一項要推出的線上系統，<br>
-              這系統將修正傳統購書流程的瑕疵，並且更公開透明、完整便利，<br>
-              讓大家在選購書籍的過程中，享受最貼心、安心、用心的服務。<br>
-            </blockquote>
-            <p>
-              這是我們開啓的第一個校園改變，你也有想改變什麼的想法嗎？<br>
-              我們邀請同樣是大學生的你們，一起加入這個改變，我們將陸續推出各項能增加校園便利的線上服務，解決大家校園中可能的不便，一起 Color your College！<br>
-            </p>
+            <div class="colorgy-info">
+              <blockquote>
+                跟你們一樣，我們都是來自於台灣校園的大學生，<br>
+                Colorgy 的產生，是為了讓校園生活更加方便，希望召集大家一起建立ㄧ個充滿創造力的雲端校園平台。
+              </blockquote>
+              <p>
+                Colorgy是個開源的雲端平台，我們蒐集資源並開源讓全台灣所有大學生使用，<br> 跟我們一起協力合作做更便利、更好、更貼近生活的服務。
+              </p>
+              <blockquote>
+                Colorgy Books 原文書團購服務是我們第一項要推出的線上系統，<br>
+                這系統將修正傳統購書流程的瑕疵，並且更公開透明、完整便利，<br>
+                讓大家在選購書籍的過程中，享受最貼心、安心、用心的服務。<br>
+              </blockquote>
+              <p>
+                這是我們開啓的第一個校園改變，你也有想改變什麼的想法嗎？<br>
+                我們邀請同樣是大學生的你們，一起加入這個改變，我們將陸續推出各項能增加校園便利的線上服務，解決大家校園中可能的不便，一起 Color your College！<br>
+              </p>
+            </div>
+          </div>
+          <div class="field-title" style="margin-top: 50px;">
+                <img src="/images/sponsor.png" />
           </div>
           <div class="sponsor-inner isotope">
               <div class="grid-sizer"></div>
@@ -311,21 +316,31 @@
                 <img src="/images/kirin.jpg" />
               </div>
               <div class="element-item">
-                <img src="/images/uber.jpg" />
+                <div class="hover-box">
+                  <img src="/images/uber.jpg" />
+                  <div class="element-item-infobox">
+                    <h5>Uber</h5>
+                    <p><a href="#uber">活動介紹</a></p>
+                  </div>
+                </div>
               </div>
               <div class="element-item">
                 <img src="/images/costco.jpg" />
               </div>
               <div class="element-item">
-                <div class="hover-box" style="box-shadow: 3px 3px 15px rgba(233, 66, 109,.85);">
-                  <a target="_blank" href="https://www.facebook.com/minimelts.tw?fref=ts">
+                <a target="_blank" href="https://www.facebook.com/minimelts.tw?fref=ts">
+                  <div class="hover-box">
                     <img src="/images/miniicecream.jpg" />
                     <div class="hover-box-inner">
-                      Mini Melts 粒粒冰淇淋是源自美國並在全球快速擴展國際冰淇淋品牌，我們在超過20個國家及地區展開服務並提供最優質的產品給我們的消費者，現在我們非常開心能夠為台灣消費者帶來嶄新的冰淇淋體驗！我們相信你們一定會喜歡 Mini Melts粒粒冰淇淋！
+                      粒粒冰淇淋是源自美國並在全球快速擴展國際冰淇淋品牌，現在我們非常開心能夠為台灣消費者帶來嶄新的冰淇淋體驗！
                       <hr>
                       #點擊進入粉專！
                     </div>
-                  </a>
+                  </div>
+                </a>
+                <div class="element-item-infobox">
+                  <h5>Mini Icecream</h5>
+                  <p><a target="_blank" href="https://www.facebook.com/minimelts.tw?fref=ts">進入粉專</a></p>
                 </div>
               </div>
               <div class="element-item">
@@ -398,6 +413,9 @@ $( function() {
 
 });
 
+$('.colorgy-logo').click(function(){
+  $('.colorgy-info').slideToggle(500);
+})
 </script>
 
     <script>
