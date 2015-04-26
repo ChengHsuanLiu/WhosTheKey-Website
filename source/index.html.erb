@@ -1,12 +1,14 @@
 <style>
     .back-to-home{ display: none; }
-    #map_canvas { width: 100%; min-height: 500px; height: 250px;}
+    #map_canvas { width: 100%; min-height: 600px; height: 250px;}
 </style>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=&sensor=true"></script>
 <script type="text/javascript">
   function initialize() {
+    var isDraggable = $(document).width() > 480 ? true : false;
     var myLatlng = new google.maps.LatLng(25.004274, 121.538361)
     var mapOptions = {
+      draggable: isDraggable,
       center: myLatlng,
       zoom: 16,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -56,12 +58,16 @@
                 <%= image_tag ('about.png') %>
             </div>
     				<blockquote>
-    					在這裡<br>
-              你能遇到各校各地、與你相同的系會菁英<br>
-              你能聽見歷屆超強活動咖的經驗血淚分享<br>
-              你更能夠為系上爭取最獨特、最豐富的贊助獎品<br>
-              <br>
-              而參加這場活動的關鍵（key），已經在你的手上..<br>
+                「Colorgy 活動鑰領」<br>
+                認識各校各地、與你相同的系會菁英<br>
+                聽見歷屆超強活動咖的經驗血淚分享<br>
+                為系上爭取最獨特、最豐富的贊助獎品！<br>
+                免費報名，現場有免費酒水、食物招待！<br>
+                <br>
+                音樂 x 交流 x 贊助<br>
+                <br>
+                參加這場活動的關鍵（key），已經在你的手上！<br><br>
+                PS. 即將上任 ＆ 現任系學會幹部歡迎協同參加！
     				</blockquote>
     			</div>
     		</div>
@@ -75,64 +81,13 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 colorgy">
-          <div class="colorgy-inner">
-            <div class="field-title" id="link1">
-                <%= image_tag ('organizer.png') %>
-            </div>
-            <div class="colorgy-logo">
-                <%= image_tag ('colorgy-logo.png') %>
-            </div>
-            <blockquote>
-              跟你們一樣，我們都是來自於台灣校園的大學生，<br>
-              Colorgy 的產生，是為了讓校園生活更加方便，希望召集大家一起建立ㄧ個充滿創造力的校園。
-            </blockquote>
-            <p>
-              Colorgy是個開源的雲端平台，我們蒐集資源並開源讓全台灣所有大學生使用，<br> 跟我們一起協力合作做更便利、更好、更貼近生活的服務。
-            </p>
-            <blockquote>
-              Colorgy Books 原文書團購服務是我們第一項要推出的線上系統，<br>
-              這系統將修正傳統購書流程的瑕疵，並且更公開透明、完整便利，<br>
-              讓大家在選購書籍的過程中，享受最貼心、安心、用心的服務。<br>
-            </blockquote>
-            <p>
-              這是我們開啓的第一個校園改變，你也有想改變什麼的想法嗎？<br>
-              我們邀請同樣是大學生的你們，一起加入這個改變，我們將陸續推出各項能增加校園便利的線上服務，解決大家校園中可能的不便，一起 Color your College！<br>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-12 location">
-          <div class="location-inner">
-
-            <div class="row">
-              <div class="col-md-7 col-md-push-5">
-                <div class="location-info">
-                <div class="field-title" id="link1">
-                    <%= image_tag ('location-title.png') %>
-                </div>
-                  <h3>Changee Playground</h3>
-                  <hr>
-                  <ul>
-                    <li>地址： 116台北市文山區羅斯福路五段176巷2號</li>
-                    <li>時間： 2015 / 5 / 11 晚上6:00 準時入場</li>
-                    <h4>交通資訊</h4>
-                    <li>搭捷運至捷運萬隆站，沿著羅斯福路步行 5 分鐘</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-5 col-md-pull-7">
-                <div id="map_canvas"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-    		<div class="col-md-12 process">
-    			<div class="process-inner">
+        <div class="col-md-12 process">
+          <div class="process-inner">
                     <div class="field-title" id="link2">
                         <%= image_tag ('process.png') %>
                     </div>
                     <!--
-    				        <ul class="collapsible" data-collapsible="accordion">
+                    <ul class="collapsible" data-collapsible="accordion">
                         <li>
                           <div class="collapsible-header">1. 簽到、各系會交流時間</div>
                           <div class="collapsible-body">
@@ -203,9 +158,8 @@
                           <td>
                               <ul>
                                   <li>各系系會陸續抵達會場、簽到</li>
-                                  <li>學⽣群⾃由交流</li>
-                                  <li>播放贊助廠商影⽚</li>
-                                  <li>現場備茶點、飲料，參加者可⾃行取用</li>
+                                  <li>學⽣群⾃由交流、打公關、認識新朋友</li>
+                                  <li>現場備茶點、飲料、音樂，在舒適的環境下進行活動！</li>
                               </ul>
                           </td>
                         </tr>
@@ -214,7 +168,7 @@
                           <td>活動開場、贊助推廣</td>
                           <td>
                               <ul>
-                                  <li>主持⼈開場，介紹本次活動之贊助商訊息。</li>
+                                  <li>主持⼈開場，介紹本次活動之贊助商訊息，這裏有各種贊助商合作資訊，只怕你不來！</li>
                               </ul>
                           </td>
                         </tr>
@@ -223,7 +177,7 @@
                           <td>破冰遊戲</td>
                           <td>
                               <ul>
-                                <li>進⼊分享前的暖場活動</li>
+                                <li>想認識你旁邊的正妹卻不想開口嗎？別擔心！進⼊分享前的暖場活動，促進大家交流認識！</li>
                                 <li>「Speed Dating」- 促進參加者間的交流認識</li>
                               </ul>
                           </td>
@@ -233,8 +187,8 @@
                           <td>活動經驗分享</td>
                           <td>
                               <ul>
-                                  <li>五位講者，每位 8 mins</li>
-                                  <li>預計邀請講者:台⼤藝術季/政⼤金弦獎/淡江知識王/清交梅竹賽/台⼤學生會</li>
+                                  <li>這次 Colorgy 邀請到五批有經驗的講者，來跟我們分享他們如何籌辦活動！ 想吸收他們的活動經驗嗎？ 來就對啦！</li>
+                                  <li>預計邀請講者: 台⼤藝術季 / 政⼤金旋獎 / 淡江知識王 / 清交梅竹賽/台⼤學生會 / 成大學生會</li>
                               </ul>
                           </td>
                         </tr>
@@ -243,7 +197,7 @@
                           <td>Colorgy 下學期各校合作計畫</td>
                           <td>
                               <ul>
-                                  <li>介紹 Colorgy Books 平台理念、與下學期的各校合作計畫</li>
+                                  <li>輪到我們 Colorgy 跟大家分享我們的平台理念哦！我們也有想要跟大家合作的合作企劃！誠摯邀請各個系會、學會！大家一起 Color Your College ！</li>
                               </ul>
                           </td>
                         </tr>
@@ -252,29 +206,143 @@
                           <td>Q & A、講者交流時間</td>
                           <td>
                               <ul>
-                                  <li>活動尾聲,可⾃自由交流/聊天</li>
-                                  <li>活動獎品開獎時間</li>
+                                  <li>活動進入尾聲，大家可以提問討論、互相拍照留念、留下連絡資訊、把吃不完的食物吃光(誤)。</li>
+                                  <li>最重要的活動獎品開獎時間！我們絕對準備了超棒的禮物，由 Colorgy 以及各家贊助商提供！你能不待到最後嗎嘿嘿！</li>
                               </ul>
                           </td>
                         </tr>
                       </tbody>
                     </table>
-    			</div>
-    		</div>
+          </div>
+        </div>
+        <div class="col-md-12 location">
+          <div class="location-inner">
+
+            <div class="row">
+              <div class="col-md-7 col-md-push-5">
+                <div class="location-info">
+                <div class="field-title" id="link1">
+                    <%= image_tag ('location-title.png') %>
+                </div>
+                  <h3>Changee Playground</h3>
+                  <hr>
+                  <ul>
+                    <li>地址： 116台北市文山區羅斯福路五段176巷2號</li>
+                    <li>時間： 2015 / 5 / 11 晚上6:00 準時入場</li>
+                    <h4>交通資訊</h4>
+                    <li>搭捷運至捷運萬隆站，沿著羅斯福路步行 5 分鐘</li>
+                    <li># 現場有提供酒精類飲品，請斟酌您的交通方式</li>
+                    <li># 在此提倡『喝酒不開車，開車不喝酒』</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-md-pull-7">
+                <div id="map_canvas"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 colorgy">
+          <div class="colorgy-inner">
+            <div class="field-title" id="link3">
+                <%= image_tag ('organizer.png') %>
+            </div>
+            <div class="colorgy-logo">
+                <%= image_tag ('colorgy-logo.png') %>
+            </div>
+            <div class="colorgy-info">
+              <blockquote>
+                跟你們一樣，我們都是來自於台灣校園的大學生，<br>
+                Colorgy 的產生，是為了讓校園生活更加方便，希望召集大家一起建立ㄧ個充滿創造力的雲端校園平台。
+              </blockquote>
+              <p>
+                Colorgy是個開源的雲端平台，我們蒐集資源並開源讓全台灣所有大學生使用，<br> 跟我們一起協力合作做更便利、更好、更貼近生活的服務。
+              </p>
+              <blockquote>
+                Colorgy Books 原文書團購服務是我們第一項要推出的線上系統，<br>
+                這系統將修正傳統購書流程的瑕疵，並且更公開透明、完整便利，<br>
+                讓大家在選購書籍的過程中，享受最貼心、安心、用心的服務。<br>
+              </blockquote>
+              <p>
+                這是我們開啓的第一個校園改變，你也有想改變什麼的想法嗎？<br>
+                我們邀請同樣是大學生的你們，一起加入這個改變，我們將陸續推出各項能增加校園便利的線上服務，解決大家校園中可能的不便，一起 Color your College！<br>
+              </p>
+            </div>
+          </div>
+          <div class="field-title" style="margin-top: 50px;">
+                <%= image_tag ('sponsor.png') %>
+          </div>
+          <div class="sponsor-inner isotope">
+              <div class="grid-sizer"></div>
+              <div class="element-item">
+                <%= image_tag('taiwan.jpg') %>
+              </div>
+              <div class="element-item w2">
+                <%= image_tag('mrcomputer.jpg') %>
+              </div>
+              <div class="element-item">
+                <a target="_blank" href="https://www.facebook.com/minimelts.tw?fref=ts">
+                  <div class="hover-box">
+                    <%= image_tag('miniicecream.jpg') %>
+                    <div class="hover-box-inner">
+                      粒粒冰淇淋是源自美國並在全球快速擴展國際冰淇淋品牌，現在我們非常開心能夠為台灣消費者帶來嶄新的冰淇淋體驗！
+                      <hr>
+                      #點擊進入粉專！
+                    </div>
+                  </div>
+                </a>
+                <div class="element-item-infobox">
+                  <h5>Mini Icecream</h5>
+                  <p><a target="_blank" href="https://www.facebook.com/minimelts.tw?fref=ts">進入粉專</a></p>
+                </div>
+              </div>
+              <div class="element-item">
+                <div class="hover-box">
+                  <%= image_tag('uber.jpg') %>
+                  <div class="element-item-infobox">
+                    <h5>Uber</h5>
+                    <h6>內含Uber乘車優惠序號<br>請點擊進入查看活動</h6>
+                    <p><a href="#uber" class="modal-trigger">進入活動介紹</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item">
+                <%= image_tag('costco.jpg') %>
+              </div>
+              <div class="element-item w2">
+                <%= image_tag('kirin.jpg') %>
+              </div>
+
+          </div>
+        </div>
         <div class="col-md-12 apply">
             <div class="apply-inner">
-                <div class="field-title" id="link3">
+                <div class="field-title" id="link4">
                 <%= image_tag ('apply.png') %>
                 </div>
                 <h5>現在就報名！</h5>
-                <p style="margin-top:15px;">
-                吃吃喝喝／認識交流／聯誼玩樂／贊助抽獎<br>
-                參加活動全面免費，要報名要快！。
+                <p style="margin-top:15px;font-size: 24px;line-height: 40px;">
+                吃吃喝喝／認識交流／聯誼玩樂／拉贊助順便抽獎<br>
+                參加活動全面免費，要報名要快！小心名額滿了！<br>
+                快點擊下面的小按鈕進入報名頁吧！<br><br>
+                PS. 即將上任 ＆ 現任系學會幹部歡迎協同參加！
                 </p>
                 <a href="./apply.html" class="waves-effect waves-light btn-large mobile" style="margin-top: 50px;">我要報名！</a>
             </div>
         </div>
 	</div>
+</div>
+<!-- Modal Structure -->
+<div id="uber" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Uber X T-FEST </h4>
+    <h5>#點擊圖片可以放大查看</h5>
+    <a href="http://key.clg.io/images/uber-img1.jpg"><%= image_tag('uber-img1.jpg') %></a>
+    <a href="http://key.clg.io/images/uber-img2.jpg"><%= image_tag('uber-img2.jpg') %></a>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">關閉</a>
+  </div>
 </div>
 <script>
     $( document ).ready(function(){
@@ -300,4 +368,37 @@
 $(window).load(function(){
     initialize()
 });
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+</script>
+<%= javascript_include_tag "imagesloaded.min.js" %>
+<%= javascript_include_tag "isotope.min.js" %>
+<script>
+$( function() {
+  // init Isotope
+  var $container = $('.isotope').imagesLoaded(function(){
+    $container.isotope({
+      itemSelector: '.element-item',
+      columnWidth: '.grid-sizer',
+      getSortData: {
+        number: '.number parseInt'
+    }
+    });
+  });
+  $container.on( 'click', '.close', function() {
+      // remove clicked element
+      var $target = $(this).parent('.element-item');
+      $container.isotope( 'remove', $target )
+      // layout remaining item elements
+        .isotope('layout');
+    });
+
+});
+
+$('.colorgy-logo').click(function(){
+  $('.colorgy-info').slideToggle(500);
+  $(this).toggleClass('open');
+})
 </script>
