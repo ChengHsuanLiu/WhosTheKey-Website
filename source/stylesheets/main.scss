@@ -12,12 +12,23 @@ a:hover, a:focus {
 }
 nav{
 	box-shadow: none !important;
+	line-height: 50px !important;
 	.brand-logo{
 		width: 13px;
 		margin-left: 20px;
 	}
-	a{
-		text-shadow: 0 0 12px rgba(0, 0, 0, 0.5), 0 0 4px rgba(0, 0, 0, 0.9), 0 0 1px rgba(0, 0, 0, 0.9);
+	ul{
+		padding-top: 10px;
+	}
+	@media screen and (min-width: 992px){
+		a{
+			text-shadow: 0 0 12px rgba(0, 0, 0, 0.5), 0 0 4px rgba(0, 0, 0, 0.9), 0 0 1px rgba(0, 0, 0, 0.9);
+		}
+	}
+	.apply-link{
+		  background-color: #28A38C;
+		  text-shadow: none;
+		  border-radius: 5px;
 	}
 }
 blockquote{
