@@ -219,7 +219,7 @@
                 <%= image_tag ('speaker.png') %>
             </div>
             <div class="row speaker-isotope">
-              <div class="col-md-3 col-sm-4 speaker-isotope-item">
+              <div class="col-md-2 col-sm-4 speaker-isotope-item">
                 <div class="speaker-item">
                   <div class="speaker-from">
                     台大學生會
@@ -258,7 +258,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-4 speaker-isotope-item">
+              <div class="col-md-4 col-sm-4 speaker-isotope-item w2">
                 <div class="row">
                   <div class="speaker-item">
                     <div class="speaker-from">
@@ -338,7 +338,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-4 speaker-isotope-item">
+              <div class="col-md-2 col-sm-4 speaker-isotope-item">
                 <div class="speaker-item">
                   <div class="speaker-from">
                     政大金旋獎
@@ -370,6 +370,42 @@
                         <li>第32屆政大金旋獎總召</li>
                         <li>第31屆政大金旋獎公關媒體組長</li>
                         <li>第30屆政大金旋獎公關組員</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 speaker-isotope-item">
+                <div class="speaker-item">
+                  <div class="speaker-from">
+                    清交梅竹賽
+                  </div>
+                  <div class="speaker-info">
+                    <div class="speaker-pic">
+                      <%= image_tag('speaker/nthu-1.jpg') %>
+                    </div>
+                    <div class="speaker-name">
+                      陳奕廷
+                    </div>
+                    <div class="speaker-school-info">
+                      清大材料系大三
+                    </div>
+                    <div class="speaker-job">
+                      <div class="title">
+                        現任
+                      </div>
+                      <ul>
+                        <li>乙未梅竹工作會 主席</li>
+                      </ul>
+                    </div>
+                    <div class="speaker-history">
+                      <div class="title">
+                        經歷
+                      </div>
+                      <ul>
+                        <li>台灣世界展望會暑期營協助偏鄉兒童課輔</li>
+                        <li>重慶大學2014海峽兩岸大學生三峽文化夏令營</li>
+                        <li>甲午梅竹工作會 電競組 &演唱會組 </li>
                       </ul>
                     </div>
                   </div>
@@ -461,7 +497,8 @@
                     <li>地址： 116台北市文山區羅斯福路五段176巷2號</li>
                     <li>時間： 2015 / 5 / 11 晚上6:00 準時入場</li>
                     <h4>交通資訊</h4>
-                    <li>搭捷運至捷運萬隆站，沿著羅斯福路步行 5 分鐘</li>
+                    <li>1. 搭捷運至捷運萬隆站，沿著羅斯福路步行 5 分鐘</li>
+                    <li>2. Uber 有提供300組300元抵用接駁車，請下載APP( <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ubercab&hl=zh_TW">Andorid</a> / <a target="_blank" href="https://itunes.apple.com/tw/app/uber/id368677368?mt=8">IOS</a> )，並使用<a href="#" class="uberModal">優惠代碼</a></li>
                     <li># 現場有提供酒精類飲品，請斟酌您的交通方式</li>
                     <li># 在此提倡『喝酒不開車，開車不喝酒』</li>
                   </ul>
@@ -529,10 +566,10 @@
               </div>
               <div class="element-item">
                 <div class="hover-box">
-                  <%= image_tag('uber.png') %>
+                  <%= image_tag('uber.jpg') %>
                   <div class="element-item-infobox">
                     <h5>Uber</h5>
-                    <h6>內含 Uber 乘車優惠序號<br>請點擊進入查看活動</h6>
+                    <h6>內含 Uber 乘車優惠序號<br>請點擊進入查看</h6>
                     <p><a href="#uber" class="modal-trigger">進入活動介紹</a></p>
                   </div>
                 </div>
@@ -633,5 +670,8 @@ $( function() {
 $('.colorgy-logo').click(function(){
   $('.colorgy-info').slideToggle(500);
   $(this).toggleClass('open');
+})
+$('.uberModal').click(function(){
+  $('#uber').openModal();
 })
 </script>
