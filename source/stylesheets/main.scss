@@ -347,9 +347,11 @@ nav ul a{
 					color: rgb(79, 77, 79);
 					margin-top: 15px;
 					font-size: 12px;
+					padding: 0 20px;
 				}
 				.speaker-history{
 					margin-top: 15px;
+					padding: 0 20px;
 				}
 			}
 		}
@@ -445,7 +447,7 @@ nav ul a{
 		position: absolute;
 		background-color: rgba(233, 66, 109,.85);
 		width: 100%;
-		top: -100%;
+		top: -200%;
 		font-size: 17px;
 		height: auto;
 		min-height: 100%;
@@ -470,6 +472,10 @@ nav ul a{
 		padding: 48px 24px !important;
 		border-radius: 0 !important;
 	}
+}
+
+.special-pic > img{
+	margin-top: -20px;
 }
 
 /* Isotope */
@@ -524,10 +530,10 @@ nav ul a{
 @media (max-width: 992px) and (min-width: 800px){ .speaker-isotope-item { width: 33% !important;} .speaker-isotope-item.w2 { width: 33% !important;} }
 @media screen and (max-width: 578px) { .speaker-isotope-item { width: 100%;} }
 @media (max-width: 768px) and (min-width: 578px ) { .speaker-isotope-item { width: 50%;} }
-@media screen and (min-width: 1425px ){ .speaker-isotope-item { width: 20%;} .speaker-isotope-item.w2 { width: 40%;}  .reward-isotope-item { width: 18%; margin: 1%; } .element-item { width: 23%; } .element-item.w2{ width: 23% !important; } }
-@media (max-width: 1425px ) and (min-width: 800px ){ .speaker-isotope-item { width: 20%;}  .speaker-isotope-item.w2 { width: 40%;} .reward-isotope-item { width: 18%; margin: 1%; } .element-item{ width: 31.333333%; } }
+@media screen and (min-width: 1425px ){ .speaker-isotope-item { width: 25%;} .speaker-isotope-item.w2 { width: 50%;} .speaker-isotope-item.w3 { width: 75%;}  .reward-isotope-item { width: 18%; margin: 1%; } .element-item { width: 23%; } .element-item.w2{ width: 23% !important; } }
+@media (max-width: 1425px ) and (min-width: 800px ){ .speaker-isotope-item { width: 25%;}  .speaker-isotope-item.w2 { width: 50%;} .speaker-isotope-item.w3 { width: 75%;}  .reward-isotope-item { width: 18%; margin: 1%; } .element-item{ width: 31.333333%; } }
 @media (max-width: 800px ) and (min-width: 320px ){ .reward-isotope-item { width: 31.333%; margin: 1%; }.element-item{ width: 48%; } }
-@media screen and (max-width: 508px){ .reward-isotope-item { width: 48%; margin: 1%; } .element-item{ width: 98%; } }
+@media screen and (max-width: 508px){ .speaker-history,.speaker-job{ padding: 0 !important; } .speaker-inner,.process{ padding: 20px 0 !important; } .speaker-isotope-item { width: 50% !important; padding: 5px !important; } .reward-isotope-item { width: 48%; margin: 1%; } .element-item{ width: 48%; } }
 .element-item > * {
   margin: 0;
   padding: 0;
